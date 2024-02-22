@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expence Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="box">
+        <section class="upper_box">
+            <h1>Expance Tracker</h1>
+            <div class="balance">
+                <h2 id="netAmount">₹0</h2>
+                <h3>Your Balance</h3>
+            </div>            
+        </section>
+        <div class="transaction_container">
+            <h3>Transactions</h3>
+            <hr/>
+
+            <div class="transactions">
+                <div class="transaction">
+                    <div class="content"><div class="left">
+                        <p>Example Text</p>
+                        <p>+ ₹ 200</p>
+                       
+                    </div> <div class="right credit"><i class="far fa-arrow-alt-circle-down"></i></div></div>
+                    <div class="lower">
+                        <div class="pen"><i class="fa-regular fa-pen-to-square"></i></div>
+                        <div class="trash"><i class="fa-solid fa-trash"></i></div>
+                    </div>
+                    
+                    
+                </div>
+                <!-- <div class="transaction">
+                    <div class="left">
+                        <p>Example Text</p>
+                        <p>+ ₹ 200</p>
+                    </div>
+                    <div class="right debit"><i class="fas fa-arrow-alt-circle-up"></i></div>
+
+                </div> -->
+            </div>
+        </div>
+        <section class="transaction_form">
+           <h3>Add Transactions</h3> 
+           <form id="transactionForm">
+            <div class="inputs">
+                <div class="form_control">
+                    <label for="text">Text</label>
+                    <input type="text" placeholder="Enter descrription" name="text" id="text">           
+                    </div>
+                    <div class="form_control">
+                    <label for="amount">Amount</label>
+                    <input type="amount" placeholder="Enter amount" name="amount" id="amount">           
+                    </div>
+            </div>
+            <div class="button_container">
+                <button type="submit" id="earnbtn">
+                    <p id="earning">₹0</p>
+                    <p>Earnings</p>
+                </button>
+                <button type="submit" id="expbtn">
+                    <p id="expense">₹0</p>
+                    <p>Expense</p>
+                </button>
+            </div>
+        </form>
+
+        </section>
+    </div>
+</div>
+    
+
+   
+   <script src="script.js"></script>
+</body>
+</html>

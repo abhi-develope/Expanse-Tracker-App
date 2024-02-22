@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary:#3a3a3a;
+    --primary-dark:#302d2d;
+    --green:#008104;
+    --red:#ff0000;
+}
+
+body{
+    background-color: var(--primary);
+
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.box{
+    background-color: white;
+    width: 450px;
+    height: 650px;
+    padding: 20px;
+    background-color: var(--primary-dark);
+    color: white;
+    position: absolute;
+}
+
+.upper_box{
+    margin-top: 4px;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 32px;
+}
+h2{
+    font-weight: 400;
+    font-size: 24px;
+}
+h3{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.upper_box, 
+.balance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.balance{
+  margin-top: 20px;  
+}
+
+.transaction_container {
+    margin-top: 40px;
+}
+
+.transactions{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.transaction .left{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+
+.transaction{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+}
+
+.lower{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    background-color: white;
+    color: black;
+    display: none;
+}
+.show{
+    display: flex;
+}
+
+/* .right{
+   padding: 2px;
+    font-size: 30px;
+} */
+
+.credit{
+    padding: 2px;
+    font-size: 30px;
+    background-color: var(--green);
+}
+.debit{
+    padding: 2px;
+    font-size: 30px;
+   background-color: var(--red); 
+}
+
+.transaction_form{
+   
+    background-color: white;
+   position: absolute;
+   bottom: 0px;
+   left: 0;
+   width: 100%;
+   color: black;
+   padding: 20px;
+}
+ .transaction_form h3{
+    margin-bottom: 10px;
+ }
+
+ .form_control{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+ }
+ .form_control:first-child{
+    flex: 2;
+ }
+
+ .inputs{
+    display: flex;
+    gap: 10px;
+ }
+
+ form input{
+    padding: 10px 15px;
+    width: 100%;
+ }
+
+ .button_container{
+    display: flex;
+    margin-top: 10px;
+    gap: 2px;
+ }
+
+ .button_container button{
+    width: 100%;
+    height: 45px;
+    color: white;
+    border: none;
+    opacity: 0.9;
+ }
+
+ .button_container button:hover{
+    opacity: 1;
+ }
+
+ #earnbtn{
+    background-color: var(--green);
+ }
+ #expbtn{
+    background-color: var(--red);
+ }
+
+ @media(max-width:500px){
+    .box{
+        width: 95%;
+    }
+ }
+
+
+ 
+
+ 
+ 
